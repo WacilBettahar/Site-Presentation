@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+background-color: #E0D8B0;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #CE9461;
+    height: 10%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    font-family:'Pacifico', normal;
+    color: white;
+    font-size: 30px;
+}
+
+.search {
+    background-color: #DDBD93;
+    height: 150px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+h2 {
+    font-family:'Pacifico', normal;
+    color: black;
+   width: 300px;
+   font-size: 30px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 350px;
+    height: 50px;
+    display: flex;
+    place-items: center;
+}
+
+@media (min-widht : 500px ) {
+    input {
+        width: 200px;
+        height: 20px;
+        display: flex;
+        place-items: center;
+    }
+}
+
+button {
+    width: 92%;
+    display: grid;
+    place-items: center;
+    height: 30px;
+    background-color: #DCDCDC;
+    border-color: black;
+}
+
+.prix {
+    text-align: center;
+    font-family:'Pacifico', normal;
+    font-size: 40px;
+}
+
+.moins {
+    border: 30px;
+    border-radius: 10px;
+    background-color: #1C1C55;
+    width: 700px;
+    height: 48px;
+    color: white;
+    font-size: 16px;
+    font-family: 'pacifico',normal;
+    display: grid;
+    place-items: left;
+    align-items: center;
+}
+
+.moins1 {
+    border: 30px;
+    border-radius: 10px;
+    background-color: black;
+    width: 700px;
+    height: 48px;
+    color: white;
+    font-size: 16px;
+    font-family: 'pacifico',normal;
+    display: grid;
+    place-items: left;
+    align-items: center;
+}
+
+.plus {
+    border: 30px;
+    border-radius: 10px;
+    background-color: #B42E2E;
+    width: 700px;
+    height: 48px;
+    color: white;
+    font-size: 16px;
+    font-family: 'pacifico',normal;
+    display: grid;
+    place-items: left;
+    align-items: center;
+}
+
+.Bingo {
+    border: 30px;
+    border-radius: 10px;
+    background-color: #009728;
+    width: 700px;
+    height: 48px;
+    color: white;
+    font-size: 16px;
+    font-family: 'pacifico',normal;
+    display: grid;
+    place-items: left;
+    align-items: center;
+}
+
+#instruction {
+    display: grid;
+    place-items: center;
+}
+
+.fa-arrow-up {
+    color: #009728;
+    justify-content: center;
+    background-color: #1C1C55;
+
+}

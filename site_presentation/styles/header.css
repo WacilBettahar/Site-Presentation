@@ -1,0 +1,227 @@
+body {
+    background-color: #0F1A33;
+    margin: 0%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    height: 100px;
+    display: grid;
+    place-items: left;
+    transition: background-color 300ms ease;
+}
+
+.header--blue {
+    background-color: #0F1A33;
+    color: white;
+}
+
+.header--blue a {
+    color: white;
+}
+
+.header--text {
+    color: white;
+}
+
+.modal-btn {
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .modal-container {
+    /* display: none; */
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: visibility 0.4s;
+  }
+  .modal-container.active {
+    /* display: block; */
+    visibility: visible;
+  }
+  
+  .overlay {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333333d3;
+    transition: opacity 0.4s 0.2s ease-out;
+  }
+  .modal-container.active .overlay {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+  }
+  
+  .modal {
+    opacity: 0;
+    width: 95%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 50px));
+    transition: opacity 0.4s ease-out,
+    transform 0.4s ease-out;
+  }
+  
+  .modal-container.active .modal {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s 0.2s ease-out,
+    transform 0.4s 0.2s ease-out;
+  }
+  
+  .close-modal {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: #2358E5;
+    color: #fff;
+  }
+  .modal h1 {
+    margin-bottom: 10px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+  }
+  .modal p {
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+
+  .logo--header{
+      width: 1%;
+      height: 1%;
+  }
+
+  .text--btn_header{
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-weight: bold;
+  }
+
+  .list--logo--header{
+      display: flex;
+      flex-direction: row;
+}
+
+.menu {
+    position: relative;
+    top: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mot--li {
+    list-style-type: none;
+}
+
+.prenom {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: medium;
+    font-size: 25px;
+    transition: font-size 300ms ease;
+    text-decoration: none;
+    color: black;
+}
+
+.nom {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.prenom:hover {
+    color:#2358E5;
+}
+
+.categorie_menu {
+    font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: medium;
+    text-decoration: none;
+	color: black;
+	transition: font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+.categorie_menu:hover {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.categorie_menu_aboutme {
+    font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: medium;
+    text-decoration: none;
+	color: black;
+	transition: font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+.categorie_menu_aboutme:hover {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about_me {
+    text-align: right;
+}
+
+.boutton_contact {
+    position: relative;
+    bottom: 6px;
+    line-height: 2;
+    border: 0;
+    padding: 0 30px;
+    border-radius: 10px;
+    background-color: #2358E5;
+    transition: line-height 0.3s ease, padding 0.3s ease;
+}
+
+.boutton_contact:hover {
+    line-height: 2.3;
+    padding: 0 33px;
+}
+
+.categorie_contact {
+    font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+    text-decoration: none;
+	color: white;
+    transition: font-size 0.3s ease;
+}
+
+.categorie_contact:hover {
+    font-size: 18px;
+}
+
+.about_me--work--contact{
+    position: relative;
+    top: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+}

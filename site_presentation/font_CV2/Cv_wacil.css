@@ -1,0 +1,384 @@
+@import url('./animations.css');
+
+
+body {
+	background-color: #1c1c1c;
+}
+
+header {
+	width: 70%;
+	height: 230px;
+	margin: 0 auto;
+	background-color: #000000;
+	border-radius: 30px;
+	transition: height 1s ease, width 1s ease;
+}
+
+header:hover {
+	width: 75%;
+	height: 240px;
+	margin: 0 auto;
+	background-color: #000000;
+	box-shadow: 5px 5px 30px 25px rgb(255, 255, 255);
+	border-radius: 30px;
+}
+
+.prenom_nom {
+	text-align: center;
+	position: relative;
+	top: 90px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 20px;
+}
+
+
+.photo_profil {
+	height: 160px;
+	position: relative;
+	top: -45px;
+	margin-left: 50px;
+}
+
+.etudiant_secteur {
+	text-align: center;
+	position: relative;
+	top: -115px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 12px;
+	color: white;
+	animation: typing 1s ease;
+}
+
+@keyframes typing {
+	from { top: 0% }
+	to { width: 100% }
+  }
+
+.bloc_competences {
+	text-align: left;
+	width: 30%;
+	height: 350px;
+	margin-left: 40px;
+	background-color: #000000;
+	border-radius: 30px;
+	position: relative;
+	top: 90px;
+	transition: height 1s ease, width 1s ease, text-align 5s ease;
+	animation: typing2 0.8s ease;
+}
+
+@keyframes typing2 {
+	from { margin-left: -500px; }
+	to { margin-left: 40px; }
+  }
+
+.bloc_competences:hover {
+	width: 31.5%;
+	height: 355px;
+	margin-left: 40px;
+	background-color: #000000;
+	border-radius: 30px;
+	box-shadow: 5px 5px 30px 25px rgb(255, 255, 255);
+	position: relative;
+	top: 90px;
+}
+
+.competences {
+	position: relative;
+	top: 10px;
+	text-align: center;
+	color: #86D4FF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.nom_competences {
+	width: 90%;
+	font-size: 16px;
+	list-style-type: none;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.logo_ps {
+	height:100%;
+	width: 12%;
+}
+.logo_ai {
+	position: relative;
+	top: -7px;
+	height: 8.5%;
+	width: 8.5%;
+}
+
+.logo_id {
+	position: relative;
+	top: 0.5px;
+	height: 100%;
+	width: 12.5%;
+}
+
+.diff_competences {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 15px;
+	margin-left: 50px;
+	list-style-type:none;
+}
+
+.diff_competences:before {
+	content: "•"; 
+	color: rgb(0, 255, 170);
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em
+}
+
+
+.liste_vide {
+	list-style-type: none;
+	height: 17px;
+}
+
+.bloc_exp {
+	text-align: left;
+	width: 60%;
+	height: 350px;
+	margin-left: 40px;
+	background-color: #000000;
+	border-radius: 30px;
+	position: relative;
+	top: -230px;
+	transition: height 1s ease, width 1s ease;
+	animation: typing4 0.8s ease;
+}
+
+@keyframes typing4 {
+	from { right: -500px; }
+	to { right: 40px; }
+  }
+
+.bloc_exp:hover {
+	width: 61.5%;
+	height: 355px;
+	box-shadow: 5px 5px 30px 25px rgb(255, 253, 253);
+
+}
+
+.bloc_formation{
+	text-align: left;
+	width: 60%;
+	height: 350px;
+	margin-left: 40px;
+	background-color: #000000;
+	border-radius: 30px;
+	position: relative;
+	top: -278px;
+	right: -480px;
+	transition: height 1s ease, width 1s ease;
+	animation: typing3 1s ease;
+}
+
+@keyframes typing3 {
+	from { right: 00px; }
+	to { right: -480px; }
+  }
+
+.bloc_formation:hover{
+	width: 61.5%;
+	height: 360px;
+	box-shadow: 5px 5px 30px 25px rgb(255, 254, 254);
+}
+
+.bloc_contact {
+	text-align: left;
+	width: 30%;
+	height: 350px;
+	margin-left: 40px;
+	background-color: #000000;
+	border-radius: 30px;
+	position: relative;
+	top: -598.5px;
+	right: -900px;
+	transition: height 1s ease, width 1s ease, text-align 5s ease;
+	animation: typing5 800ms ease;
+}
+
+@keyframes typing5 {
+	from { margin-left: 500px; }
+	to { margin-left: 40px; }
+  }
+
+.bloc_contact:hover {
+	width: 31.5%;
+	height: 355px;
+	box-shadow: 5px 5px 30px 25px rgb(255, 255, 255);
+}
+
+.nom_formations {
+	position: relative;
+	font-size: 16px;
+	list-style-type: none;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-left: 30px;
+	top: 30px;
+}
+
+.date_formations {
+	position: relative;
+	top: 13px;
+	left: 570px;
+	color: rgb(228, 227, 227);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 15px;
+	margin-left: 50px;
+	list-style-type:none;
+	width: 30%;
+}
+
+.diff_formations {
+	position: relative;
+	top: 30px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 15px;
+	margin-left: 50px;
+	list-style-type:none;
+	margin-left: 80px;
+}
+
+.diff_formations:before {
+	content: "•"; 
+	color: rgb(0, 255, 170);
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em
+}
+
+.monod_formation {
+	position: relative;
+	top: 25px;
+}
+
+.permis_formation {
+	position: relative;
+	top: 45px;
+}
+
+.nom_experience {
+	position: relative;
+	font-size: 16px;
+	list-style-type: none;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-left: 30px;
+	top: 30px;
+}
+
+.date_experience {
+	position: relative;
+	top: 14px;
+	left: 570px;
+	color: rgb(228, 227, 227);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 15px;
+	margin-left: 50px;
+	list-style-type:none;
+}
+
+.diff_experience {
+	position: relative;
+	top: 30px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 15px;
+	margin-left: 50px;
+	list-style-type:none;
+	margin-left: 80px;
+}
+
+.diff_experience:before {
+	content: "•"; 
+	color: rgb(0, 255, 170);
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em
+}
+
+.vendeur_exp {
+	position: relative;
+	top: 15px;
+}
+
+.livreur_exp {
+	position: relative;
+	top: 25px;
+}
+;.site_internet{
+	display: flex;
+	flex-direction: row;
+}
+
+.site_internet--2{
+	list-style-type: none;
+}
+
+.site_internet--3{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.mail{
+	display: flex;
+	flex-direction: row;
+}
+
+.mail--2{
+	list-style-type: none;
+}
+
+.mail--3{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.github{
+	display: flex;
+	flex-direction: row;
+}
+
+.github--2{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	list-style-type: none;
+	text-decoration: underline;
+}
+
+.linkedin--2{
+	list-style-type: none;
+}
+
+.linkedin--3{
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact--3{
+	position: relative;
+	top: 20px;
+}

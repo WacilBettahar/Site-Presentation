@@ -1,0 +1,640 @@
+body {
+    background-color: #01418D;
+    margin: 0%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    height: 100px;
+    display: grid;
+    place-items: left;
+    transition: background-color 300ms ease;
+}
+
+.header--blue {
+    background-color: #01418D;
+    color: white;
+}
+
+.header--blue a {
+    color: white;
+}
+
+.header--text {
+    color: white;
+}
+
+table {
+    width: 100%;
+    z-index: 1;
+}
+
+main > section {
+    min-height: calc(100vh - 100px);
+}
+
+.menu {
+    position: relative;
+    top: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mot--li {
+    list-style-type: none;
+}
+
+.prenom {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: medium;
+    font-size: 25px;
+    transition: font-size 300ms ease;
+    text-decoration: none;
+    color: black;
+}
+
+.nom {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.prenom:hover {
+    color:#01418D;
+}
+
+.categorie_menu {
+    font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: medium;
+    text-decoration: none;
+	color: black;
+	transition: font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+.categorie_menu:hover {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.categorie_menu_aboutme {
+    font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: medium;
+    text-decoration: none;
+	color: black;
+	transition: font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+.categorie_menu_aboutme:hover {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about_me {
+    text-align: right;
+}
+
+.boutton_contact {
+    position: relative;
+    bottom: 6px;
+    line-height: 2;
+    border: 0;
+    padding: 0 30px;
+    border-radius: 10px;
+    background-color: #66C9FF;
+    transition: line-height 0.3s ease, padding 0.3s ease;
+}
+
+.boutton_contact:hover {
+    line-height: 2.3;
+    padding: 0 33px;
+}
+
+.categorie_contact {
+    font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+    text-decoration: none;
+	color: white;
+    transition: font-size 0.3s ease;
+}
+
+.categorie_contact:hover {
+    font-size: 18px;
+}
+
+.about_me--work--contact{
+    position: relative;
+    top: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.salutation {
+    font-size: 15px;
+    font-weight: lighter;
+    list-style-type: none;
+    color: white;
+}
+
+
+
+.salutation {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    list-style-type: none;
+    color: white;
+    margin-left: 12px;
+}
+
+.salutation::before {
+    content: "😆";
+    display: inline-block; 
+	width: 1.5em;
+	margin-left: -1em
+}
+
+.phrase_presentation {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    list-style-type: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 5px;
+}
+
+.phrase_presentation2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: medium;
+    list-style-type: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    position: relative;
+    top: 20px;
+    animation: typing 2s steps(46), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 48ch;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+.phrase_presentation2 .letter{
+    display: inline-block;
+  line-height: 1em;
+}
+
+.contact_linkedin {
+    line-height: 2.4;
+    border: 0;
+    padding: 0 25px;
+    border-radius: 10px;
+    background-color: white;
+    transition: line-height 0.3s ease, padding 0.3s ease;
+}
+
+.contact_linkedin:hover {
+    line-height: 2.5;
+    padding: 0 28px;
+}
+
+.contact_linkedin_text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+    font-size: 12px;
+    color: black;
+}
+
+.contact_linkedin_text:hover {
+    font-size: 12.5px;
+}
+
+.contact_mail {
+    line-height: 2.5;
+    border: 0;
+    padding: 0 32px;
+    border-radius: 10px;
+    background-color: #66C9FF;
+    transition: line-height 0.3s ease, padding 0.3s ease;
+}
+
+.contact_mail:hover {
+    line-height: 2.6;
+    padding: 0 34px;
+}
+
+.contact_mail_text {
+    font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+    font-size: 12px;
+    color: white;
+}
+
+.contact_mail_text:hover {
+    font-size: 12.5px;
+}
+
+.listpuce_contact {
+    list-style-type: none;
+}
+
+.linkedin_mail {
+    width: 57%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+    margin-left: 50px;
+}
+
+.mini_txt_presentation {
+    width: 65%;
+}
+
+
+.first_page {
+    display: grid;
+    place-items: center;
+    
+}
+
+.first_page__content {
+    display: flex;
+    justify-content: center;
+}
+
+.second_page {
+    background-color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: calc(110vh - 55px);
+    
+}
+
+.about_me23 {
+    position: relative;
+    top: 60px;
+    margin-left: 50px;
+}
+
+.about_me_titre {
+    list-style-type: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.qui_suis_je {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin: 60px auto;
+    margin-left: 45px;
+}
+
+.paragraphe_aboutme {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 45px;
+    position: relative;
+    bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    line-height: 1.4;
+}
+
+.paragraphe_aboutme_2 {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.test {
+    list-style-type: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+.test2 {
+    list-style-type: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: typing 2s steps(46), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 48ch;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+.centres_interets {
+    margin: 100px auto;
+    font-size: 25px;
+}
+
+.third_page {
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: calc(100vh - 55px);
+}
+
+.div_work {
+    position: relative;
+    top: 80px;
+}
+
+.work {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-left: 5%;
+    font-size: 40px;
+}
+
+.work::after {
+    content: "💻";
+    display: inline-block; 
+	width: 1.5em;
+	margin-left: 0.3em
+}
+
+
+.projet_CV {
+    width: 55%;
+    margin: 5% 0% 0% 19%;
+}
+
+.projet_CV_lien {
+    color: white;
+    transition: font-size 500ms ease;
+    font-size: 22px;
+}
+
+.projet_CV_lien:hover {
+    font-size: 25px;
+}
+
+.projet_CV_2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style-type:none ;
+    font-size: 20px;
+    text-decoration: underline;
+    color: white;
+}
+
+.projet_CV_3{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 3% auto;
+    color: white;
+    font-size: 17px;
+}
+
+.projet_site--personnel{
+    width: 55%;
+    margin: 3% 0% 0% 19%;
+}
+
+.projet_site--personnel_2 {
+    list-style-type: none;
+}
+
+.projet_site--personnel_3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: underline;
+    color: white;
+    transition: font-size 500ms ease;
+}
+
+.projet_site--personnel_3:hover {
+    font-size: 25px;
+}
+
+.projet_site--personnel_4 {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 3% auto;
+    color: white;
+    font-size: 17px;
+}
+
+.more_to_come {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    list-style-type: none;
+    position: relative;
+    top: 35px;
+}
+
+.fourth_page {
+    background-color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+}
+
+.contact--fourth_page {
+    width: 65%;
+    display: flex;    
+    justify-content: space-between;
+}
+
+.contact--fourth_page2 {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+}
+
+.contact--fourth_page--text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    list-style-type: none;
+    color: #01418D;
+    line-height: 2em;
+}
+
+.photo--fourth_page {
+    width: 20%;
+    height: 20%;
+}
+
+footer{
+    min-height: calc(40vh - 55px);
+}
+
+.div--logo_contact{
+    color: #01418D;
+    font-size: 18px;
+    
+}
+
+.foot--second_page{
+    width: 100%;
+    height: 100%;
+}
+
+.plage--second_page{
+    width: 100%;
+    height: 100%;
+}
+
+.liste--second{
+    list-style-type: none;
+    width: 30%;
+}
+
+.ami--second_page{
+    width: 85%;
+    height: 90%;
+}
+
+.caroussel{
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+}
+
+.modal-btn {
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .modal-container {
+    /* display: none; */
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: visibility 0.4s;
+  }
+  .modal-container.active {
+    /* display: block; */
+    visibility: visible;
+  }
+  
+  .overlay {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333333d3;
+    transition: opacity 0.4s 0.2s ease-out;
+  }
+  .modal-container.active .overlay {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+  }
+  
+  .modal {
+    opacity: 0;
+    width: 95%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 50px));
+    transition: opacity 0.4s ease-out,
+    transform 0.4s ease-out;
+  }
+  
+  .modal-container.active .modal {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s 0.2s ease-out,
+    transform 0.4s 0.2s ease-out;
+  }
+  
+  .close-modal {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: #66C9FF;
+    color: #fff;
+  }
+  .modal h1 {
+    margin-bottom: 10px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+  }
+  .modal p {
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+
+  .logo--header{
+      width: 1%;
+      height: 1%;
+  }
+
+  .text--btn_header{
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-weight: bold;
+  }
+
+  .list--logo--header{
+      display: flex;
+      flex-direction: row;
+}
